@@ -1,0 +1,45 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4 col"></div>
+        <div class="col-4 col">
+            <!-- <h1 class="h1" style="text-align: center;font-weight: bold;margin-top: 20px;font-size: 30px;margin-bottom: 0px; font-family: Georgia, 'Times New Roman', Times, serif;"> Calculator</h1> -->
+            <div class="calc">
+                <div class="row calculator-keys" style="width: 100%;">
+                    <div class="maindisplay background-secondary col col-12 calc-display ">
+                        <div class="calc-display-input">{{subText}}</div>
+                        {{mainText}}
+                    </div>
+                </div>
+                <div class="row calc-row">
+                    &nbsp;&nbsp;&nbsp;&nbsp; <a class="col-2 col calc-button calc-button-red calc-button" (click)="allClear()">AC</a> &nbsp;&nbsp;
+                    <a class="col-2 col calc-button calc-button-red calc-button-big" (click)="pressKey('.')">.</a>&nbsp;&nbsp;&nbsp;
+                    <a class="col-2 col calc-button calc-button-red calc-button" (click)="pressKey('/')">/</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="col-2 col calc-button calc-button-red calc-button" (click)="pressKey('%')">%</a>&nbsp;&nbsp;&nbsp;<br>
+                </div>
+                <div class="row calc-row">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<a class="col-2 col calc-button" (click)="pressKey('7')">7</a>&nbsp;&nbsp;
+                    <a class="col-2 col calc-button" (click)="pressKey('8')">8</a> &nbsp;&nbsp;&nbsp;
+                    <a class="col-2 col calc-button" (click)="pressKey('9')">9</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="col-2 col calc-button" (click)="pressKey('x')">X</a> &nbsp;&nbsp;&nbsp;
+                </div>
+                <div class="row calc-row" style="width: 100%;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<a class="col-2 col calc-button" (click)="pressKey('4')">4</a>&nbsp;&nbsp;
+                    <a class="col-2 col calc-button" (click)="pressKey('5')">5</a> &nbsp;&nbsp;&nbsp;
+                    <a class="col-2 col calc-button" (click)="pressKey('6')">6</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="col-2 col calc-button" (click)="pressKey('+')">+</a> &nbsp;&nbsp;&nbsp;
+                </div>
+                <div class="row calc-row" style="width: 100%;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<a class="col-2 col calc-button" (click)="pressKey('1')">1</a>&nbsp;&nbsp;
+                    <a class="col-2 col calc-button" (click)="pressKey('2')">2</a> &nbsp;&nbsp;&nbsp;
+                    <a class="col-2 col calc-button" (click)="pressKey('3')">3</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="col-2 col calc-button" (click)="pressKey('-')">-</a> &nbsp;&nbsp;&nbsp;
+                </div>
+                <div class="row calc-row" style="width: 100%;">
+                    &nbsp;&nbsp;&nbsp;&nbsp; <a class="col-7 col calc-button" style="width: 70px;" (click)="pressKey('0')">0</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="col-2 col calc-button " (click)="getAnswer()">=</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col"></div>
+    </div>
+</div>
